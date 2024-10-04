@@ -54,14 +54,15 @@ int main(int argc, char **argv) {
 
   glutInitWindowPosition(100,100); //origin on the window system
   glutInitWindowSize(300,300);  // window´s size
-  glutCreateWindow ("Chess");
+  glutCreateWindow ("Chess");  //crear ventana 
 
   glClearColor(0.5, 0.35, 0.05, 0.0);         // black background 
   glMatrixMode(GL_PROJECTION);              // setup viewing projection 
   glLoadIdentity();                           // start with identity matrix 
   glOrtho(0.0, 100.0, 100.0, 0.0, -1.0, 1.0);   // setup a 100x100x2 viewing world
 
-  glutDisplayFunc(display); 
+  glutDisplayFunc(display2); 
+  // glutDisplayFunc(display2); 
   glutMainLoop();
 
   return 0; 

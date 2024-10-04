@@ -8,6 +8,6 @@ void display(){
 
 
 void display2(){
-  char** blackKnight1 = whiteSquare;
+  char** blackKnight1 = reverse(whiteSquare);
   interpreter(blackKnight1);
 }

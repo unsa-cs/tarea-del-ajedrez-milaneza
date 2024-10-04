@@ -61,7 +61,7 @@ int main(int argc, char **argv) {
   glLoadIdentity();                           // start with identity matrix 
   glOrtho(0.0, 100.0, 100.0, 0.0, -1.0, 1.0);   // setup a 100x100x2 viewing world
 
-  glutDisplayFunc(display2); 
+  glutDisplayFunc(repeatH(display2)); 
   // glutDisplayFunc(display2); 
   glutMainLoop();
 

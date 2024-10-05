@@ -2,7 +2,7 @@
 #include "figures.h"
 
 void display(){
-  char** square1 = whiteSquare;
+  char** square1 = repeatH(whiteSquare, 8);
   char** square2 = reverse(knight);
 
   interpreter(square1);

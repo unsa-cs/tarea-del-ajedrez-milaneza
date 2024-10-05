@@ -2,6 +2,6 @@
 #include "figures.h"
 
 void display(){
-  char** square = join(knight, rook);
+  char** square = up(knight, rook);
   interpreter(square);
 }

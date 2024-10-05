@@ -6,7 +6,7 @@
  * You should call the interpreter funtion inside it and give it the picture like
  * a string array, this string arraya, should finish with 0 on the last position.
  */
-void display3();
+void display();
 
 /*
  * return a new picture, the vertical mirror from the original picture

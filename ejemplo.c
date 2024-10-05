@@ -2,6 +2,6 @@
 #include "figures.h"
 
 void display(){
-  char** blackKnight = reverse(reverse(knight));
-  interpreter(blackKnight);
+  char** square = superImpose(whiteSquare, knight);
+  interpreter(square);
 }

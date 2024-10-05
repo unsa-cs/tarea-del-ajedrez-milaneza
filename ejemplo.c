@@ -2,6 +2,6 @@
 #include "figures.h"
 
 void display(){
-  char** square = superImpose(knight, whiteSquare);
+  char** square = join(knight, rook);
   interpreter(square);
 }

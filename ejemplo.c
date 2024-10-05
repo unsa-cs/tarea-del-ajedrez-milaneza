@@ -1,7 +1,7 @@
-#include "chess.h"
+include "chess.h"
 #include "figures.h"
 
 void display(){
-  char** blackKnight = repeatH(whiteSquare,4);
+  char** blackKnight = repeatV(whiteSquare,8);
   interpreter(blackKnight);
 }

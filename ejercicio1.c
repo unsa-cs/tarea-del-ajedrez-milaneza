@@ -3,7 +3,7 @@
 
 void display(){
   char** square1 = whiteSquare;
-  char** square2 = reverse(whiteSquare);
+  char** square2 = reverse(knight);
 
   interpreter(square1);
   interpreter(square2);

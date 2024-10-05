@@ -2,6 +2,6 @@
 #include "figures.h"
 
 void display(){
-  char** whiteKnight = rotateR(knight);
+  char** whiteKnight = rotateL(rotateR(knight));
   interpreter(whiteKnight);
 }

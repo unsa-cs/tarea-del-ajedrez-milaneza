@@ -2,9 +2,8 @@
 #include "figures.h"
 
 void display(){
-  char** square1 = repeatH(whiteSquare, 8);
-  char** square2 = reverse(knight);
-
-  interpreter(square1);
-  interpreter(square2);
+  char** square1 = whiteSquare;
+  char** square2 = reverse(whiteSquare);
+  char** square3 = join(square1,square2);
+  interpreter(square3);
 }

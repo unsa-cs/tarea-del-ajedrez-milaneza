@@ -4,5 +4,6 @@
 void display(){
   char** square = whiteSquare;
   char** reverse_square = reverse(whiteSquare);
-  interpreter(reverse_square);
+  char** up_square = up(reverse_square,square);
+  interpreter(up_square);
 }

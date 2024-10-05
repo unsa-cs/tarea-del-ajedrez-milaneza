@@ -8,6 +8,7 @@ void display(){
   char** columna_square = repeatV(up_square,2);
   char** reverse_columna = reverse(columna_square);
   char** patron_square = join(columna_square,reverse_columna);
-  interpreter(patron_square);
+  char** tablero = repeatH(patron_square,4);
+  interpreter(tablero);
 
 }

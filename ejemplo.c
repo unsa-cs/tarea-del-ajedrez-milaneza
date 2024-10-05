@@ -2,6 +2,6 @@
 #include "figures.h"
 
 void display(){
-  char** blackKnight = repeatV(whiteSquare,8);
-  interpreter(blackKnight);
+  char** whiteKnight = knight;
+  interpreter(whiteKnight);
 }

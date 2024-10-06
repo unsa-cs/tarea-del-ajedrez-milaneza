@@ -16,6 +16,7 @@ void display(){
   fichas = join(fichas,knight);
   fichas = join(fichas,rook);
   char** fichas_reverse=reverse(fichas);
+  char** final_board = superImpose(fichas_reverse,board);
   
-  interpreter(fichas_reverse);
+  interpreter(final_board);
 }

@@ -6,5 +6,9 @@ void display(){
   char** squareB = reverse(whiteSquare);
   char** pattern = join(squareB, squareW);
   char** board =repeatH(pattern, 4);
-  interpreter(board);
+
+  //fichas
+  char** prueba = join(rook,knight);
+  char** final_board = superImpose(prueba,board);
+  interpreter(board_m);
 }

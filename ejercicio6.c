@@ -17,13 +17,13 @@ void display(){
   fichas = join(fichas,bishop);
   fichas = join(fichas,knight);
   fichas = join(fichas,rook);
-  char** fichas_reverse=reverse(fichas);
   
   //fila peones
   char** peones = repeatH(pawn,8);
 
   char** up_blanca = up(fichas,peones);
+  char** fichas_negras = up(peones, fichas);
   char** final_board = superImpose(up_blanca,patron_tablero);
  
-  interpreter(final_board);
+  interpreter(fichas_negras);
 }

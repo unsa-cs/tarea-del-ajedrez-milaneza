@@ -5,5 +5,6 @@ void display(){
   char** squareW = whiteSquare;
   char** squareB = reverse(whiteSquare);
   char** pattern = join(squareB, squareW);
-  interpreter(pattern);
+  char** board =repeatH(pattern, 4);
+  interpreter(board);
 }

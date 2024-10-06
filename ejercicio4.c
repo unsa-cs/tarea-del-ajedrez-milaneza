@@ -9,6 +9,8 @@ void display(){
 
   //fichas
   char** prueba = join(rook,knight);
+  prueba = join(prueba,bishop);
   char** final_board = superImpose(prueba,board);
-  interpreter(board_m);
+  
+  interpreter(final_board);
 }

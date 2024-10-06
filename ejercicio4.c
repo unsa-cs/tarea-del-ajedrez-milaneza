@@ -6,5 +6,5 @@ void display(){
   char** squareB = reverse(whiteSquare);
   char** rookW = superImpose(rook, squareW);
   char** rookB = superImpose(rook, squareB);
-  interpreter(rookB);
+  interpreter(reverse(rookB));
 }

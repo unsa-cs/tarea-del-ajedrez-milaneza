@@ -8,9 +8,13 @@ void display(){
   char** board =repeatH(pattern, 4);
 
   //fichas
-  char** prueba = join(rook,knight);
-  prueba = join(prueba,bishop);
-  char** final_board = superImpose(prueba,board);
+  char** fichas = join(rook,knight);
+  fichas = join(fichas,bishop);
+  fichas = join(fichas,queen);
+  fichas = join(fichas,king);
+  fichas = join(fichas,bishop);
+  fichas = join(fichas,knight);
+  fichas = join(fichas,rook);
   
-  interpreter(final_board);
+  interpreter(fichas);
 }

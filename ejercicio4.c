@@ -4,5 +4,6 @@
 void display(){
   char** squareW = whiteSquare;
   char** squareB = reverse(whiteSquare);
-  interpreter(squareW);
+  char** rookW = superImpose(rook, squareW);
+  interpreter(rookW);
 }

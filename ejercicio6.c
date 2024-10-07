@@ -22,7 +22,8 @@ void display(){
   //fila peones
   char** peones = repeatH(pawn,8);
 
+  char** up_blanca = up(fichas,peones);
   char** final_board = superImpose(fichas_reverse,board);
   
-  interpreter(peones);
+  interpreter(up_blanca);
 }

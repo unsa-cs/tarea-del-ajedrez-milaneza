@@ -26,6 +26,7 @@ void display(){
   fichas_negras = reverse(fichas_negras);
   char** blancas_board = superImpose(up_blanca,patron_tablero);
   char** negras_board = superImpose(fichas_negras,patron_tablero); 
- 
-  interpreter(negras_board);
+  char** final_board = up(blancas_board,patron_tablero);
+
+  interpreter(final_board);
 }

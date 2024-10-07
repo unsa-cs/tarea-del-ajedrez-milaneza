@@ -23,7 +23,7 @@ void display(){
   char** peones = repeatH(pawn,8);
 
   char** up_blanca = up(fichas,peones);
-  char** final_board = superImpose(fichas_reverse,board);
-  
-  interpreter(up_blanca);
+  char** final_board = superImpose(up_blanca,patron_tablero);
+ 
+  interpreter(final_board);
 }

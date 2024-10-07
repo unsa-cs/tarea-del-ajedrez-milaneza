@@ -18,7 +18,11 @@ void display(){
   fichas = join(fichas,knight);
   fichas = join(fichas,rook);
   char** fichas_reverse=reverse(fichas);
+  
+  //fila peones
+  char** peones = repeatH(pawn,8);
+
   char** final_board = superImpose(fichas_reverse,board);
   
-  interpreter(patron_tablero);
+  interpreter(peones);
 }

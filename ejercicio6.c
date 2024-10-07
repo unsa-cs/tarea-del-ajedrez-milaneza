@@ -27,6 +27,7 @@ void display(){
   char** blancas_board = superImpose(up_blanca,patron_tablero);
   char** negras_board = superImpose(fichas_negras,patron_tablero); 
   char** final_board = up(blancas_board,patron_tablero);
-
+  final_board = up(final_board,patron_tablero);
+  final_board = up(final_board,negras_board);
   interpreter(final_board);
 }
